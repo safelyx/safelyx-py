@@ -1,0 +1,25 @@
+name: Run Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13", "pypy-3.11", "pypy-3.12", "pypy-3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+          allow-prereleases: true
+      - run: |
+          make install
+      - env:
+          TEST_KEY_CODE: ${{ secrets.TEST_KEY_CODE }}
+        run: |
+          make test

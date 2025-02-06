@@ -1,0 +1,33 @@
+from distutils.core import setup
+
+setup(
+    name="safelyx",
+    packages=["safelyx"],
+    version="0.1.0",
+    description="API client for Safelyx.",
+    author="Safelyx",
+    author_email="help@safelyx.com",
+    url="https://github.com/safelyx/safelyx-py",
+    download_url="https://github.com/safelyx/safelyx-py/tarball/0.1.0",
+    keywords=[
+        "safelyx",
+        "api",
+        "client",
+        "sdk",
+        "security",
+        "automated moderation tools",
+        "content moderation",
+        "message moderation",
+        "image moderation",
+        "link safety check",
+        "email verification",
+        "ugc moderation",
+        "user-generated content moderation",
+        "content safety",
+        "content safety tools",
+        "content safety api",
+        "content safety sdk",
+        "content safety client",
+    ],
+    python_requires=">=3.11",
+)
