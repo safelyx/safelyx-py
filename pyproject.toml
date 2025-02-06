@@ -1,14 +1,13 @@
 [project]
 name = "safelyx"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Safelyx", email="help@safelyx.com" },
 ]
 description = "API client for Safelyx."
 readme = "README.md"
 requires-python = ">=3.11"
-license = "ISC"
-license-files = ["LICENSE"]
+license = { text = "ISC" }
 keywords = [
     "safelyx",
     "api",
@@ -36,4 +35,4 @@ dependencies = [
 
 [project.urls]
 Homepage = "https://github.com/safelyx/safelyx-py"
-Download = "https://github.com/safelyx/safelyx-py/tarball/0.1.0"
+Download = "https://github.com/safelyx/safelyx-py/archive/refs/tags/v0.1.1.tar.gz"
