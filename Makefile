@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 .PHONY: install
 install:
 	python -m venv .venv

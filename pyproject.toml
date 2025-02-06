@@ -1,0 +1,39 @@
+[project]
+name = "safelyx"
+version = "0.1.0"
+authors = [
+  { name="Safelyx", email="help@safelyx.com" },
+]
+description = "API client for Safelyx."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "ISC"
+license-files = ["LICENSE"]
+keywords = [
+    "safelyx",
+    "api",
+    "client",
+    "sdk",
+    "security",
+    "automated moderation tools",
+    "content moderation",
+    "message moderation",
+    "image moderation",
+    "link safety check",
+    "email verification",
+    "ugc moderation",
+    "user-generated content moderation",
+    "content safety",
+    "content safety tools",
+    "content safety api",
+    "content safety sdk",
+    "content safety client",
+]
+
+dependencies = [
+    "requests==2.32.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/safelyx/safelyx-py"
+Download = "https://github.com/safelyx/safelyx-py/tarball/0.1.0"

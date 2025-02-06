@@ -48,7 +48,7 @@ make test
 
 ## Publishing
 
-After committing and pushing with a new version in `setup.py`, just run:
+After committing and pushing with a new version in `pyproject.toml`, just run:
 
 ```bash
 make publish
